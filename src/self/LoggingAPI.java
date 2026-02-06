@@ -1,3 +1,5 @@
+package self;
+
 import java.io.IOException;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
@@ -9,7 +11,7 @@ public class LoggingAPI {
 
     static {
         try {
-            fileHandler = new FileHandler("filehandler/filehandler.txt",true);
+            fileHandler = new FileHandler("loggingApi/filehandler.txt",true);
             fileHandler.setFormatter(new SimpleFormatter());
             logger.addHandler(fileHandler);
         } catch (IOException e) {
