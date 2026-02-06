@@ -20,6 +20,7 @@ public class LoggingAPI {
     public static void main(String[] args){
         logger.info("Bu ma'lumot berish uchun kerak!");
         logger.warning("Diqqat men xavfdan ogohlantiraman!");
+        logger.info("This case is not just suitable");
         fileHandler.flush();
         fileHandler.close();
     }
