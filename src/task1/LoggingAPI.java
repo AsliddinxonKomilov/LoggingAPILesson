@@ -13,6 +13,7 @@ public class LoggingAPI {
         try {
             fileHandler = new FileHandler("loggingApi/task1uchun.txt");
             fileHandler.setFormatter(new SimpleFormatter());
+            logger.addHandler(fileHandler);
             logger.info("Dastur normal ishlamoqda");
         } catch (IOException e) {
             e.printStackTrace();
